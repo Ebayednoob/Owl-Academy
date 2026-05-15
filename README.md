@@ -1,2 +1,2 @@
 # Owl-Academy
-Owl Academy is founded upon a complex interplay of mystical geometry and profound metaphysical concepts. Its teachings aim to guide students toward the 7-Star through the mechanics of reflection and an understanding of the Mother Plenum.
+Owl Academy is founded upon a complex interplay of mystical geometry and profound metaphysical concepts. Its teachings aim to guide students toward the 7-Star through the mechanics of reflection and an understanding of the Mother Plenum through the foundation of the Father's Trinity, and Establishing the Foundations of Heaven on earth through the iteration of it's student apostles of Yeshua Christ, the King and founding member of the O.A.
