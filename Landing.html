@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Owl Academy | Your Learning Hub</title>
+    <!-- Tailwind CSS for rapid, scalable styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=JetBrains+Mono:wght@400;700&display=swap');
+        
+        :root {
+            --primary: #4f46e5; /* Indigo 600 */
+            --primary-hover: #4338ca; /* Indigo 700 */
+            --bg-main: #f8fafc; /* Slate 50 */
+            --text-main: #0f172a; /* Slate 900 */
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-main);
+            color: var(--text-main);
+        }
+
+        .mono {
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        /* Modular Card Styling */
+        .module-card {
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 24px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+        }
+
+        .module-card:hover {
+            transform: translateY(-4px);
+            border-color: var(--primary);
+            box-shadow: 0 10px 15px -3px rgba(79, 70, 229, 0.1), 0 4px 6px -2px rgba(79, 70, 229, 0.05);
+        }
+
+        /* Identity Layer overrides (Easy for students to change) */
+        .academy-theme-text { color: var(--primary); }
+        .academy-theme-bg { background-color: var(--primary); color: white; }
+        .academy-theme-bg:hover { background-color: var(--primary-hover); }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col">
+
+    <!-- NAVIGATION (Identity Layer) -->
+    <nav class="bg-white border-b border-slate-200 sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <!-- Logo & Title -->
+                <div class="flex items-center gap-3 cursor-pointer">
+                    <div class="w-10 h-10 rounded-full academy-theme-bg flex items-center justify-center text-xl shadow-md">
+                        🦉
+                    </div>
+                    <span class="font-bold text-xl tracking-tight">Owl Academy</span>
+                </div>
+                
+                <!-- Links -->
+                <div class="hidden md:flex space-x-8 text-sm font-medium text-slate-600">
+                    <a href="#" class="hover:text-indigo-600 transition-colors">Modules</a>
+                    <a href="academy/about.html" class="hover:text-indigo-600 transition-colors">About</a>
+                    <a href="academy/instructors.html" class="hover:text-indigo-600 transition-colors">Instructors</a>
+                </div>
+
+                <!-- CTA -->
+                <a href="#curriculum" class="academy-theme-bg px-4 py-2 rounded-md text-sm font-semibold transition-colors shadow-sm">
+                    Start Learning
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <header class="py-20 bg-white border-b border-slate-200 relative overflow-hidden">
+        <!-- Abstract Background Pattern -->
+        <div class="absolute inset-0 opacity-[0.03] pointer-events-none" style="background-image: radial-gradient(#4f46e5 1px, transparent 1px); background-size: 32px 32px;"></div>
+        
+        <div class="max-w-4xl mx-auto px-6 text-center relative z-10">
+            <div class="inline-block px-3 py-1 mb-6 border border-indigo-200 rounded-full text-xs font-mono text-indigo-600 bg-indigo-50">
+                SYSTEM: ONLINE // STATUS: READY
+            </div>
+            <h1 class="text-5xl md:text-6xl font-extrabold mb-6 tracking-tight text-slate-900">
+                Master the Future of <br>
+                <span class="academy-theme-text">Systems Thinking.</span>
+            </h1>
+            <p class="text-lg text-slate-500 mb-10 max-w-2xl mx-auto leading-relaxed">
+                Welcome to your personalized learning hub. Explore modular curriculum, build robust projects, and develop a deep understanding of core concepts.
+            </p>
+            <div class="flex justify-center gap-4">
+                <a href="#curriculum" class="academy-theme-bg px-8 py-3 rounded-lg font-bold text-lg transition-colors shadow-md hover:shadow-lg">
+                    View Curriculum
+                </a>
+                <a href="students/how-to-clone.html" class="bg-white border border-slate-300 text-slate-700 hover:bg-slate-50 px-8 py-3 rounded-lg font-bold text-lg transition-colors shadow-sm">
+                    Clone This Repo
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- CURRICULUM GRID -->
+    <main id="curriculum" class="flex-grow max-w-6xl mx-auto px-6 py-16 w-full">
+        <div class="flex justify-between items-end mb-10">
+            <div>
+                <h2 class="text-3xl font-bold text-slate-900">Curriculum Modules</h2>
+                <p class="text-slate-500 mt-2">Structured learning blocks designed for scalable knowledge.</p>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <!-- Module 1 -->
+            <a href="modules/module-01-introduction/index.html" class="module-card block group">
+                <div class="flex justify-between items-start mb-4">
+                    <div class="w-12 h-12 rounded-lg bg-indigo-100 text-indigo-600 flex items-center justify-center text-xl font-bold">
+                        01
+                    </div>
+                    <span class="text-xs font-mono text-slate-400 bg-slate-100 px-2 py-1 rounded">3 Lessons</span>
+                </div>
+                <h3 class="text-xl font-bold mb-2 group-hover:text-indigo-600 transition-colors">Introduction & Foundations</h3>
+                <p class="text-sm text-slate-500 mb-4 line-clamp-2">
+                    Understand the core philosophy of the academy, set up your local environment, and learn how to navigate the repository.
+                </p>
+                <div class="text-sm font-semibold text-indigo-600 flex items-center gap-2">
+                    Begin Module <i class="fas fa-arrow-right text-xs transition-transform group-hover:translate-x-1"></i>
+                </div>
+            </a>
+
+            <!-- Module 2 -->
+            <a href="modules/module-02-foundations/index.html" class="module-card block group">
+                <div class="flex justify-between items-start mb-4">
+                    <div class="w-12 h-12 rounded-lg bg-emerald-100 text-emerald-600 flex items-center justify-center text-xl font-bold">
+                        02
+                    </div>
+                    <span class="text-xs font-mono text-slate-400 bg-slate-100 px-2 py-1 rounded">5 Lessons</span>
+                </div>
+                <h3 class="text-xl font-bold mb-2 group-hover:text-emerald-600 transition-colors">Core Systems & Architecture</h3>
+                <p class="text-sm text-slate-500 mb-4 line-clamp-2">
+                    Dive deep into modular design, context-bridging, and hierarchical data structures. The meat of the curriculum.
+                </p>
+                <div class="text-sm font-semibold text-emerald-600 flex items-center gap-2">
+                    Begin Module <i class="fas fa-arrow-right text-xs transition-transform group-hover:translate-x-1"></i>
+                </div>
+            </a>
+
+            <!-- Module 3 -->
+            <a href="modules/module-03-projects/index.html" class="module-card block group">
+                <div class="flex justify-between items-start mb-4">
+                    <div class="w-12 h-12 rounded-lg bg-amber-100 text-amber-600 flex items-center justify-center text-xl font-bold">
+                        03
+                    </div>
+                    <span class="text-xs font-mono text-slate-400 bg-slate-100 px-2 py-1 rounded">1 Project</span>
+                </div>
+                <h3 class="text-xl font-bold mb-2 group-hover:text-amber-600 transition-colors">Capstone Application</h3>
+                <p class="text-sm text-slate-500 mb-4 line-clamp-2">
+                    Apply everything you've learned. Build your own system from scratch using the templates provided in this repo.
+                </p>
+                <div class="text-sm font-semibold text-amber-600 flex items-center gap-2">
+                    View Project <i class="fas fa-arrow-right text-xs transition-transform group-hover:translate-x-1"></i>
+                </div>
+            </a>
+
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-900 text-slate-400 py-12 mt-auto">
+        <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <div class="flex items-center gap-2 mb-4 text-white">
+                    <span class="text-xl">🦉</span>
+                    <span class="font-bold text-lg">Owl Academy</span>
+                </div>
+                <p class="text-sm">An open-source, modular learning template designed for maximum scalability and easy cloning.</p>
+            </div>
+            <div>
+                <h4 class="text-white font-bold mb-4">Resources</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="templates/lesson-template.html" class="hover:text-white transition-colors">Lesson Template</a></li>
+                    <li><a href="students/how-to-clone.html" class="hover:text-white transition-colors">How to Clone</a></li>
+                    <li><a href="students/customize-your-academy.html" class="hover:text-white transition-colors">Customization Guide</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-bold mb-4">System</h4>
+                <div class="font-mono text-xs space-y-1">
+                    <p>VERSION: 1.0.0</p>
+                    <p>STATUS: DEPLOYED</p>
+                    <p>FRAMEWORK: HTML/TAILWIND</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
